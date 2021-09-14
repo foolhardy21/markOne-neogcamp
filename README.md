@@ -14,4 +14,5 @@
 - readline-sync to read user input.
 - Functional programming.
 
-[Replit](https://replit.com/@foolhardy21/mkone#index.js)
+[markOne Quiz Replit](https://replit.com/@foolhardy21/mkone?v=1)
+[markTwo Quiz Replit](https://replit.com/@foolhardy21/mktwo?v=1)
