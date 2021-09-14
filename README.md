@@ -14,4 +14,4 @@
 - readline-sync to read user input.
 - Functional programming.
 
-![Replit](https://replit.com/@foolhardy21/mkone#index.js)
+[Replit](https://replit.com/@foolhardy21/mkone#index.js)
