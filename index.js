@@ -1,25 +1,23 @@
 const readline = require('readline-sync')
-const quiz = require('./quizdata')
+const quizdata = require('./quizdata')
 let points = 0
 let userName = ''
 
-function askQuestion(text) {
-  return readline.question(`${text}\n`)
-}
-function printVerdict(text) {
+const askQuestion = text => readline.question(`${text}\n`)
+
+const printVerdict = text => {
   console.log(text)  
 }
-function checkAnswerValidity(originalAnswer, userAnswer) {
-  return originalAnswer.toLowerCase() == userAnswer.toLowerCase() ? true : false
-}
-function welcomeUser() {
+const checkAnswerValidity = (originalAnswer, userAnswer) => originalAnswer.toLowerCase() == userAnswer.toLowerCase() ? true : false
+
+const welcomeUser = () => {
   userName = askQuestion('Your name?')
   printVerdict(`Welcome to SUPERHERO QUIZ ${userName}!`)
 }
-function playGame() {
-  for (let i = 0; i < quiz.length; i++) {
-    let userAnswer = askQuestion(quiz[i].ques)
-    if(checkAnswerValidity(quiz[i].ans, userAnswer)) {
+const playGame = () => {
+  for (let i = 0; i < quizdata.length; i++) {
+    let userAnswer = askQuestion(quizdata[i].ques)
+    if(checkAnswerValidity(quizdata[i].ans, userAnswer)) {
         printVerdict('correct!')
         points++
       }
@@ -29,7 +27,7 @@ function playGame() {
   }
 
 }
-function finalVerdict() {
+const finalVerdict = () => {
 printVerdict(`${userName}, you got ${points} out of 5.`)
 
 }

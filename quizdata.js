@@ -19,6 +19,6 @@ module.exports = [
       ques: 'Which superhero was scared of bats?',
       ans: 'Batman'
     },
-  ]
+]
   
   
